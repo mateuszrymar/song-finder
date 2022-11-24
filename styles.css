@@ -1,0 +1,79 @@
+body {
+    background-color: rgb(216, 233, 224);
+    color: rgb(63, 63, 63);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: rgb(12, 221, 134);
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header > button {
+    background-color: rgb(216, 233, 224);
+    border: 2px solid rgb(8, 116, 71);
+    color: rgb(0, 201, 124);;
+    font-weight: bold;
+}
+
+header > button:hover {
+    background-color: rgb(240, 245, 242);
+    border: 2px solid rgb(8, 116, 71);
+    color: rgb(0, 201, 124);;
+    font-weight: bold;
+}
+
+header > button:active {
+    background-color: rgb(8, 116, 71);
+    border: 2px solid rgb(8, 116, 71);
+    color: rgb(0, 201, 124);;
+    font-weight: bold;
+}
+
+
+
+header > input {
+    background-color: rgb(216, 233, 224);
+    border: 2px solid rgb(223, 223, 223);
+    color: rgb(8, 116, 71);
+}
+
+main {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    gap: 2em;
+}
+
+article {
+    /* box-sizing: border-box; */
+    /* border: 1px solid grey; */
+    min-width: fit-content;
+    max-width: 700px;
+    background-color: rgb(247, 247, 247);
+    padding: 15px;
+    text-align: center;
+}
+
+@media (min-width: 770px) {
+    main {
+        padding: 2em;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 2em;
+    }
+}
+
+@media (min-width: 1150px) {
+    main {
+        padding: 2em;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 2em;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
